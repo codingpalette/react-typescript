@@ -5,7 +5,8 @@ import { hot } from 'react-hot-loader/root';
 import App from './components/App'
 import GuGuDan from "./components/GuGuDan";
 import WordRelay from "./components/WordRelay";
+import NumberBaseball from "./components/NumberBaseball";
 
-const Hot = hot(WordRelay); // HOC
+const Hot = hot(NumberBaseball); // HOC
 
 ReactDOM.render(<Hot /> , document.querySelector('#root'));
