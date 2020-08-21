@@ -2,6 +2,7 @@ import * as React  from 'react';
 import { useState, useCallback, useRef } from 'react';
 
 import Try from './Try';
+import { TryInfo } from '../types';
 
 
 
@@ -15,10 +16,7 @@ const getNumbers = () => {
     return array;
 }
 
-interface TryInfo {
-    try: string;
-    result: string;
-}
+
 
 const NumberBaseball = () => {
 
