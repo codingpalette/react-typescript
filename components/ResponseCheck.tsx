@@ -1,5 +1,26 @@
 import * as React from 'react';
-import {useState, useCallback, useRef} from 'react'
+import {useState, useCallback, useRef} from 'react';
+import styled from '@emotion/styled';
+
+const ScreenBox = styled('div')`
+    & #screen{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        user-select: none;
+    }
+    & #screen.waiting{
+        background-color: aqua;
+    }
+    & #screen.ready{
+        background-color: red;
+        color: #fff;
+    }
+    & #screen.now{
+        background-color: greenyellow;
+    }
+
+`;
 
 
 const ResponseCheck = () => {
@@ -53,9 +74,11 @@ const ResponseCheck = () => {
 
     return (
         <>
-            <div id="screen" className={state} onClick={onClickScreen}>
-                {message}
-            </div>
+            <ScreenBox>
+                <div id="screen" className={state} onClick={onClickScreen}>
+                    {message}
+                </div>
+            </ScreenBox>
             {renderAverage()}
         </>
     )
