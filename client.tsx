@@ -7,7 +7,8 @@ import GuGuDan from "./components/GuGuDan";
 import WordRelay from "./components/WordRelay";
 import NumberBaseball from "./components/NumberBaseball";
 import ResponseCheck from "./components/ResponseCheck";
+import RSP from "./components/RSP";
 
-const Hot = hot(ResponseCheck); // HOC
+const Hot = hot(RSP); // HOC
 
 ReactDOM.render(<Hot /> , document.querySelector('#root'));
