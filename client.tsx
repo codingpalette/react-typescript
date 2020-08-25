@@ -8,7 +8,8 @@ import WordRelay from "./components/WordRelay";
 import NumberBaseball from "./components/NumberBaseball";
 import ResponseCheck from "./components/ResponseCheck";
 import RSP from "./components/RSP";
+import Lotto from "./components/Lotto";
 
-const Hot = hot(RSP); // HOC
+const Hot = hot(Lotto); // HOC
 
 ReactDOM.render(<Hot /> , document.querySelector('#root'));
