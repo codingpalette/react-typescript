@@ -9,7 +9,8 @@ import NumberBaseball from "./components/NumberBaseball";
 import ResponseCheck from "./components/ResponseCheck";
 import RSP from "./components/RSP";
 import Lotto from "./components/Lotto";
+import TicTacToe from "./components/TicTacToe";
 
-const Hot = hot(Lotto); // HOC
+const Hot = hot(TicTacToe); // HOC
 
 ReactDOM.render(<Hot /> , document.querySelector('#root'));
