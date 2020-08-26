@@ -1,16 +1,17 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { hot } from 'react-hot-loader/root';
+import { Provider } from 'react-redux';
 
+import store from './store/configureStore'
 import App from './components/App'
-import GuGuDan from "./components/GuGuDan";
-import WordRelay from "./components/WordRelay";
-import NumberBaseball from "./components/NumberBaseball";
-import ResponseCheck from "./components/ResponseCheck";
-import RSP from "./components/RSP";
-import Lotto from "./components/Lotto";
-import TicTacToe from "./components/TicTacToe";
+
 
 const Hot = hot(App); // HOC
 
-ReactDOM.render(<Hot /> , document.querySelector('#root'));
+ReactDOM.render(
+    <Provider store={store}>
+        <Hot />
+    </Provider>,
+    document.querySelector('#root')
+);
