@@ -11,6 +11,6 @@ import RSP from "./components/RSP";
 import Lotto from "./components/Lotto";
 import TicTacToe from "./components/TicTacToe";
 
-const Hot = hot(TicTacToe); // HOC
+const Hot = hot(App); // HOC
 
 ReactDOM.render(<Hot /> , document.querySelector('#root'));
